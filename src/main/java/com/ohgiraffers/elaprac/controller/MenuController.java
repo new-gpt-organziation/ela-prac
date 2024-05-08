@@ -25,6 +25,7 @@ public class MenuController {
     @GetMapping("menus/{menuCode}")
     public MenuDTO findMenuByMenuCode(@PathVariable("menuCode") int menuCode) {
         MenuDTO menu = menuService.findMenuByMenuCode(menuCode);
+        
         return menu;
     }
 }
